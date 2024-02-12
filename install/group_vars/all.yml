@@ -4,13 +4,13 @@
 ## Ansible user
 # change this if running Ansible as a non-root user
 # would require sudo, e.g. AWS EC2 uses ec-user
-ansible_system_user: root
+ansible_system_user: ec2-user
 
 ### Firewall management ###
 # Set to true to deploy firewall rules for nagios server
-manage_firewall: true
+manage_firewall: false
 # Set to true to deploy firewall rules for client nrpe
-manage_firewall_client: true
+manage_firewall_client: false
 
 ### Nagios Variables ###
 nagios_plugin_path: /usr/lib64/nagios/plugins

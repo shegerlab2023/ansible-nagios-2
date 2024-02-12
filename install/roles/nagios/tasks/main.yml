@@ -152,6 +152,7 @@
   file:
     path: /etc/nagios/conf.d
     state: directory
+  become: true  
 
 - name: Generate the nagios monitoring templates
   template: src={{ item + ".j2" }}
@@ -207,6 +208,7 @@
   file:
     dest: /usr/lib64/nagios/plugins/check_freenas.py
     mode: a+x
+  become: true  
 
 - name: Copy check_ssl_cert Nagios check
   copy: src=check_ssl_cert dest=/usr/lib64/nagios/plugins/
@@ -216,7 +218,7 @@
   file:
     dest: /usr/lib64/nagios/plugins/check_ssl_cert
     mode: a+x
-
+  become: true
 - name: Generate the nagios user CGI template
   template: src={{ item + ".j2" }}
             dest=/etc/nagios/{{ item }}

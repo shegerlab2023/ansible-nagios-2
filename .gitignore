@@ -2,3 +2,4 @@
 meta/main.yml
 # no retry files
 *.retry
+ansible.cfg

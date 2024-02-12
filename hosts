@@ -5,7 +5,7 @@
 # this is your main nagios server and
 # where ansible will deploy it.
 [nagios]
-host-01
+54.144.225.32
 
 # use this for generic Linux or FreeBSD servers
 [servers]
