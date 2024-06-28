@@ -1,4 +1,4 @@
-ansible-nagios
+ansible-nagios Set Up
 ==============
 Playbook for setting up the Nagios monitoring server and clients (CentOS/Rocky/RHEL/Fedora/FreeBSD)
 
